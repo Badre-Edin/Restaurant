@@ -1,0 +1,7 @@
+.home-logo {
+    font-family: 'Charmonman', cursive;
+    transform: rotate(-10deg);
+    font-size: 5vmin;
+    color: white;
+    margin: 1em;
+}
