@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import UserDetails from "./UserDetails.jsx";
+
 
 class UserList extends React.Component {
   constructor(props) {
@@ -8,8 +8,6 @@ class UserList extends React.Component {
     this.state = {
       users: []
     };
-
-    this.deleteUser = this.deleteUser.bind(this);
   
   }
 
@@ -29,11 +27,6 @@ class UserList extends React.Component {
       <div>
         <button onClick={this.fetchData.bind(this)}>Get All Users</button>
         <h1>we have {this.state.users.length} users in the database</h1>
-
-
-        {this.state.users.map((user, index) => {
-          return <UserDetails user={user} key={index} index={index} deleteUser={this.deleteUser} typing={this.typing} />;
-        })}
       </div>
     );
   }

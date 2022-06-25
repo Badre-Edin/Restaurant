@@ -18,5 +18,5 @@ let saveFood = (data) => {
     return food.insertMany(data)
   }
   
-  module.exports.saveUser = saveUser;
+  module.exports.saveFood = saveFood;
     

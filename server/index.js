@@ -42,11 +42,6 @@ app.get("/data", (req, res) => {
       res.send(result);
     });
   });
-  app.put("/data", (req, res) => {
-    users.findOneAndUpdate({ _id: req.params.id }, req.body, {
-      new: true
-    }).then((result) => {
-      res.send(result);
-    });
-  });
+  
+  
   
