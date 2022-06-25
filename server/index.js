@@ -1,5 +1,6 @@
 const express = require('express');
-const User = require('../database/index');
+const {saveUser} = require('../database/user');
+const {saveFood} = require('../database/food')
 const path = require("path");
 const users =require('../client/src/data')
 let app=express();
@@ -28,6 +29,8 @@ app.post('/data',function(req,res){
 users.create(req.body).then((result)=>{
     res.send(result)
 })
+saveUser(users)
+return users
 })
 app.get("/data", (req, res) => {
     users.find().then((data) => {

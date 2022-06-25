@@ -1,15 +1,16 @@
 import React from 'react';
 
-import { AboutUs,SpecialMenu,Gallery,FindUs } from './container';
+
 
 import './App.css';
+import HomePage from './components/homePage/homePage';
+import Reservations from './components/reservation/Reservations';
 
 const App = () => (
   <div>
-    <AboutUs />
-    <SpecialMenu />
-    <Gallery />
-    <FindUs />
+    <HomePage />
+    <Reservations />
+    
    
   </div>
 );

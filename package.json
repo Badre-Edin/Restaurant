@@ -23,7 +23,17 @@
     "jquery": "^3.1.1",
     "mongoose": "^5.10.15",
     "react": "^16.4",
-    "react-dom": "^16.4"
+    "react-dom": "^16.4",
+    "react-scripts": "^5.0.1",
+    "start": "^5.1.0"
   },
-  "homepage": "https://github.com/Badre-Edin/Restaurant#readme"
+  "homepage": "https://github.com/Badre-Edin/Restaurant#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "babel-loader": "^8.2.5",
+    "babel-polyfill": "^6.26.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
 }
