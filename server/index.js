@@ -1,47 +1,30 @@
+const { parseAsync } = require('@babel/core');
 const express = require('express');
-const {saveUser} = require('../database/user');
-const {saveFood} = require('../database/food')
-const path = require("path");
-const users =require('../client/src/data')
-let app=express();
+const { save } = require('../database/index');
 
-app.use(express.static(__dirname+'/../client/dist'));
-app.use(express.json());
+let app = express();
 
-const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost", { useNewUrlParser: true, useUnifiedTopology: true });
+app.use(express.static(__dirname + '/../client/dist'));
+app.use(express.json())
 
-const db = mongoose.connection;
-db.on("error", console.error.bind(console, "connection error:"));
-db.once("open", function () {
-  console.log("db is successfully connected");
-});
-
-app.set("views", path.join(__dirname, "./client/dist"));
-app.use(express.static(path.join(__dirname, "./client/dist")));
-
-app.listen(3000, () => {
-  console.log("server is running on port http://localhost:3000");
-});
-
-
-app.post('/data',function(req,res){
-users.create(req.body).then((result)=>{
-    res.send(result)
+app.post('/test', function (req, res) {
+  const newSave ={
+    username: req.body.username,
+    phone:req.body.phone,
+    table:req.body.table,
+    time:req.body.time
+  }
+  save(newSave)
+  res.send(newSave)
 })
-saveUser(users)
-return users
-})
-app.get("/data", (req, res) => {
-    users.find().then((data) => {
-      res.send(data);
-    });
-  });
-  app.delete("/data", (req, res) => {
-    users.findOneAndRemove({ _id: req.params.id }).then((result) => {
-      res.send(result);
-    });
-  });
-  
-  
-  
+app.get('/test/:id', async(req, res)=> {
+ const getUser=await ({_id:req.params.id})
+ res.send(getUser)
+});
+ 
+
+let port = 3000;
+
+app.listen(port, function() {
+  console.log(`listening on port ${port}`);
+});

@@ -1,0 +1,9 @@
+body {
+  background-image: url('https://img.freepik.com/free-photo/black-empty-plate-cutlery-fork-knife-dark-textured-background-mockup-concept-design-restaurant-menu-website-design_114160-996.jpg?w=2000');
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  padding: 40px;
+  font-family: Arial;
+  text-align: center;
+}
