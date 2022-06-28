@@ -1,6 +1,6 @@
 const { parseAsync } = require('@babel/core');
 const express = require('express');
-const { save } = require('../database/index');
+const { save,find } = require('../database/index');
 
 let app = express();
 
@@ -17,10 +17,16 @@ app.post('/test', function (req, res) {
   save(newSave)
   res.send(newSave)
 })
-app.get('/test/:id', async(req, res)=> {
- const getUser=await ({_id:req.params.id})
- res.send(getUser)
+app.get('/test/:name', function(req, res){
+  var username={
+    name:req.params.name
+  }
+  find(username)
+  res.end()
 });
+app.delete('/test',function(req,res){
+  
+})
  
 
 let port = 3000;

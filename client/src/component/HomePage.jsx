@@ -1,24 +1,7 @@
 import React from 'react';
-//import './HomePage.css'
 
+function HomePage () {
 
-
-class HomePage extends React.Component {
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     show: false
-  //   }
-    
-  // }
-//   showReservation(){
-//     console.log(this.show);
-//     this.setState({
-//         show : true
-//     })
-//     console.log(this.show);
-//   }
-  render() {
     return (
         <div className="home-page">
            <h1 className='home-logo'>Mediterranean Food</h1>
@@ -30,6 +13,5 @@ class HomePage extends React.Component {
         </div>
     ) 
   }
-}
 
 export default HomePage;

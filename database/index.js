@@ -26,4 +26,7 @@ let userSchema = mongoose.Schema({
    
     return User.insertMany(user)
 }
-module.exports.save = save;
+let find = (name) => {
+  return User.findOne({name})
+}
+module.exports= {save,find};
