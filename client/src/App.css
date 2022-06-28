@@ -1,9 +1,31 @@
-body {
-  background-image: url('https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?cs=srgb&dl=pexels-pixabay-260922.jpg&fm=jpg');
 
+
+body {
+  background-image: url('https://i.pinimg.com/originals/81/fd/1d/81fd1d41928f8e6a0b72dc24a6d945ed.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   color: white;
   padding: 40px;
   font-family: Arial;
   text-align: center;
+}
+.navbar{
+  display: flex;
+  position: relative;
+}
+.navBarLink{
+ margin-left: 5pc;
+ cursor: pointer;
+}
+.home-logo{
+  margin-top: auto;
+}
+.home-page{
+  text-align: center;
+  padding-top: 200px;
+}
+.form{
+  text-align: center;
+  padding-top: 200px;
 }

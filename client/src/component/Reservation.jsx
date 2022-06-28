@@ -38,7 +38,7 @@ function Reservation() {
   }
 
   return (
-    <form>
+    <form className='form'>
       <label >Name</label>
       <input type="text" onChange={onNameChange} /><br />
       <label>Phone Number</label>

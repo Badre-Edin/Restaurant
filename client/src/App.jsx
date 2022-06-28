@@ -42,12 +42,12 @@ function App() {
 
    return (
       <div>
-         <div>
-            <div onClick={onHomeClick}>Home</div>
-            <div onClick={onReservationClick}>Reservation</div>
-            <div onClick={onMyReservationClick}>My Reservation</div>
-            <div onClick={onAboutUsClick}>AboutUs</div>
-         </div>
+         <nav className="navbar">
+            <div className='navBarLink' onClick={onHomeClick}>Home</div>
+            <div className='navBarLink' onClick={onReservationClick}>Reservation</div>
+            <div className='navBarLink' onClick={onMyReservationClick}>My Reservation</div>
+            <div className='navBarLink' onClick={onAboutUsClick}>AboutUs</div>
+         </nav>
          {showHome && <HomePage />}
          {showReservation && <Reservation />}
          {showMyReservation && <MyReservation />}
