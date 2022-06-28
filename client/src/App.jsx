@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import HomePage from './HomePage.jsx';
-import AboutUs from './AboutUs.jsx'
-import Reservation from './Reservation.jsx';
-import axios from 'axios';
+import HomePage from '../src/component/HomePage.jsx';
+import AboutUs from '../src/component/AboutUs.jsx'
+import Reservation from '../src/component/Reservation.jsx';
+
 
 
 function App() {
