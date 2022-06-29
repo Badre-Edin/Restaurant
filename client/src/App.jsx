@@ -42,13 +42,13 @@ function App() {
 
    return (
       <div>
-         <div className='header'>
+         <div className="header">
             <nav className="navbar">
-               <i class="fa fa-cutlery" aria-hidden="true" id="logo"></i>
-               <div className='navBarLink' onClick={onHomeClick}><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</div>
-               <div className='navBarLink' onClick={onReservationClick}>Reservation</div>
-               <div className='navBarLink' onClick={onMyReservationClick}>My Reservation</div>
-               <div className='navBarLink' onClick={onAboutUsClick}>AboutUs</div>
+               <i className="fa fa-cutlery" aria-hidden="true" id="logo"></i>
+               <div className="navBarLink" onClick={onHomeClick}><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</div>
+               <div className="navBarLink" onClick={onReservationClick}>Reservation</div>
+               <div className="navBarLink" onClick={onMyReservationClick}>My Reservation</div>
+               <div className="navBarLink" onClick={onAboutUsClick}>AboutUs</div>
             </nav>
          </div>
          {showHome && <HomePage />}

@@ -146,7 +146,16 @@ section {
 }
 
 .aboutUs {
+  background-color: white;
   vertical-align: auto;
   color: orangered;
   text-align: center;
+}
+
+ul {
+  position: absolute;
+  text-align: center;
+  bottom: 0px;
+  width: 100%;
+
 }

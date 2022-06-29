@@ -1,10 +1,12 @@
 import React from 'react';
 
-function AboutUs(){
+function AboutUs() {
 
-    return(
-        <div className='aboutUs'>
+    return (
+        <div className="aboutUs">
             <h1 >AboutUs</h1>
+            <h2>DELICIOUS FOOD</h2>
+            <p></p>
         </div>
     )
 }
