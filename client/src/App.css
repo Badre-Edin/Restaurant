@@ -1,7 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: .1s linear;
+ 
+}
+
+html {
+  font-size: 80%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 20rem;
+}
+
 
 
 body {
-  background-image: url('https://i.pinimg.com/originals/81/fd/1d/81fd1d41928f8e6a0b72dc24a6d945ed.jpg');
+  background-image: url('https://images.squarespace-cdn.com/content/v1/569969a41c121004ba2554a2/1616207101143-CSL4SK2OYXHTF7K79LV7/3T9A0183.jpg?format=2500w');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -9,23 +27,106 @@ body {
   padding: 40px;
   font-family: Arial;
   text-align: center;
+  vertical-align: top;
 }
-.navbar{
+
+.navbar {
+
+  background: #0a0a0aec;
   display: flex;
-  position: relative;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  padding: 2rem 30%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-.navBarLink{
- margin-left: 5pc;
- cursor: pointer;
+
+.navBarLink {
+  cursor: pointer;
 }
-.home-logo{
-  margin-top: auto;
+
+.navBarLink:hover {
+  color: brown;
 }
-.home-page{
+
+
+.home-title {
+  vertical-align: top;
+}
+
+.home-page {
+  color: orangered;
   text-align: center;
   padding-top: 200px;
 }
-.form{
+
+#logo {
+  font-size: 2.5rem;
+  
+  font-weight: bolder;
+  color: gold;
+
+}
+
+.form {
   text-align: center;
   padding-top: 200px;
+}
+
+.button {
+  font-size: large;
+  width: 40%;
+  background-color: hwb(242 10% 68% / 0.747);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button {
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  background-color: rgba(165, 42, 42, 0.733);
+  color: white;
+}
+
+input {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label {
+  color: black;
+  font-size: large;
+
+  margin-right: auto;
+
+}
+
+.table {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: rgba(245, 245, 245, 0.644);
 }

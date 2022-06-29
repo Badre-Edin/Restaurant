@@ -24,31 +24,45 @@ function Reservation() {
     let time = event.target.value
     setTime(time)
   }
-  const saveReservation=function(event){
+  const saveReservation = function (event) {
     event.preventDefault()
-    let userData={
+    let userData = {
       username,
       phone,
       table,
       time
     }
-    axios.post('/test',userData)
-    .then(response=>console.log(response))
-    .catch(err=>console.log(err))
+    axios.post('/test', userData)
+      .then(response => console.log(response))
+      .catch(err => console.log(err))
   }
 
   return (
+    <section>
     <form className='form'>
-      <label >Name</label>
+      <label >Name</label><br />
       <input type="text" onChange={onNameChange} /><br />
-      <label>Phone Number</label>
+      <label>Phone Number</label><br />
       <input type="tel" onChange={onPhoneChange} /><br></br>
-      <label >Tabe</label>
-      <input type='table' onChange={onTableChange} /><br></br>
-      <label >Time</label>
+      <label >Tabe</label><br />
+
+      <select className='table' name="table" onChange={onTableChange}>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select><br />
+
+      {/*<input className='table' type='table' onChange={onTableChange} /><br></br>*/}
+      <label >Time</label><br />
       <input type='time' onChange={onTimeChange} /><br></br>
-      <button onClick={saveReservation} >Submit</button>
+      <button className='button' onClick={saveReservation} >Submit</button>
     </form>
+    </section>
   )
 }
 

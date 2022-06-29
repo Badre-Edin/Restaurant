@@ -4,7 +4,7 @@ function HomePage () {
 
     return (
         <div className="home-page">
-           <h1 className='home-logo'>Mediterranean Food</h1>
+           <h1 className='home-title'>WELCOME TO Delicious Food</h1>
            <h4 className="home-description">
                Mediterranean cuisine is the food and preparation methods 
                <br/><br/>of people living in the Mediterranean Basin region.
